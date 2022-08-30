@@ -1,0 +1,85 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.heading {
+    font-size: 35px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.intro {
+    background-color: #2F5A78;
+    color: white;
+    padding-left: 16px;
+    padding-bottom: 8px;
+    margin-bottom: 4px;
+}
+
+.prof {
+    font-size: 25px;
+    font-weight: lighter;
+}
+.subheading {
+    font-weight: bolder;
+    color: #2F5A78;
+    text-transform: uppercase;
+    padding: 16px 0px 16px 16px;
+}
+
+.data {
+    font-size: 1.2em;
+    padding-bottom: 10px;
+    margin-left: 20px;
+}
+.date {
+    font-size: 16px;
+    font-weight: bolder;
+    color: #2F5A78;
+}
+.contactinfo {
+    font-size: 15px;
+    padding-left: 16px;
+     background-color: #eeeeee;
+}
+.social {
+    font-size: 15px;
+    padding-left: 16px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.skills {
+    width: 70%;
+    margin: auto;
+}
+.skills ul li{
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -15px;
+} 
+.skills ul li .skill_prog{
+    width: 60%;
+    height: 10px;
+    position: relative;
+}
+.skills ul li .skill_prog span{
+    position: absolute;
+    height: 100%;   
+    background: #2F5A78;
+    padding-right: 50px;
+}
+.skill_name{
+    width: 150px;
+}
+.skill_per{
+    margin-right: 15px;
+} 
+img{
+    float: right;
+}
+.icon{
+    float: left;
+    color: #2F5A78;
+}
