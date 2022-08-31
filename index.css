@@ -67,6 +67,9 @@ img {
     padding-bottom: 10px;
     margin-left: 20px;
 }
+a::after {
+    color: #2F5A78
+}
 /* END contact SECTION */
 
 /* START skills SECTION */
@@ -74,9 +77,11 @@ img {
 .skills {
     width: 80%;
     float: left;
+    margin-bottom: 50px;
 }
 .skillssection {
     margin: 20px;
+
 }
 .skills ul li{
     display: flex;
@@ -104,6 +109,65 @@ img {
 
 /* END skills SECTION */
 
+/* START education SECTION */
+
+.education {
+    float: left;
+    width: 23%;
+    margin-right: 30px;
+    border: solid 1px black;
+    background: #eeeeee;
+}
+.education li {
+    padding: 4px 20px;
+}
+.educationfollow {
+    border-top: black 1px solid;
+    padding-top: 50px;
+}
+/* END education SECTION */
+
+
+
+.expitem {
+    margin: 0px 10px 0px 0px;
+    padding: 20px;
+    list-style: none;
+    
+}
+
+.expinfo {
+    display: inline-block;
+}
+.explist ul {
+    padding-left: 30px
+}
+.otherskills ul li .skill_prog{
+    width: 25%;
+    height: 10px;
+}
+.explist {
+    width: 74%;
+    float: left;
+    border: solid 1px black;
+    background-color: #eeeeee;
+}
+
+.expitemfollow {
+    border-top: black 1px solid;
+}
+
+.jobtitle {
+    white-space: pre;
+    font-weight: bold;
+}
+.jobdesc ul {
+    margin-top: 5px;
+}
+.jobdesc {
+    clear: left;
+    padding-top: 2px;
+}
 
 
 .small {
@@ -122,43 +186,6 @@ img {
 }
 
 
-.expitem {
-    margin: 0px 10px 0px 10px;
-    padding: 20px;
-    border: #2F5A78 solid 1px;
-    list-style: none;
-}
-.expitemfollow {
-    margin-top: -50px;
-}
-
-.expinfo {
-    display: inline-block;
-}
-
-
-.jobtitle {
-    white-space: pre;
-    font-weight: bold;
-}
-
-
-.jobdesc ul {
-    margin-top: 5px;
-}
-
-
-.otherskills ul li .skill_prog{
-    width: 25%;
-    height: 10px;
-}
 
 
 
-
-.social {
-    font-size: 15px;
-    padding-left: 16px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-}
