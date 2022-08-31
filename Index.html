@@ -9,6 +9,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="index.css">
         <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+        <script>
+            function hoverByClass(classname,colorover,colorout="transparent"){
+	            var elms=document.getElementsByClassName(classname);
+	            for(var i=0;i<elms.length;i++){
+		            elms[i].onmouseover = function(){
+			            for(var k=0;k<elms.length;k++){
+                            elms[k].style.backgroundColor=colorover;
+                        }
+                    };
+                    elms[i].onmouseout = function(){
+                        for(var k=0;k<elms.length;k++){
+                            elms[k].style.backgroundColor=colorout;
+                        }
+                    };
+                }
+            }
+        hoverByClass("un","yellow");
+        hoverByClass("un2","pink");
+        </script>
+
 	</head>
 	<body>
         <!--Intro-->
@@ -21,131 +41,174 @@
                 A confident, friendly and ambitious person with excellent analytical, problem-solving and organizational skills.</div>
         </div>
         <!--Contact Information-->
-        <div class="contactinfo">
-            <div class="icon">
-                <div class="fas fa-map-signs"></div>
+        <div class="contactbar">
+            <div class="contactinfo">
+                <div class="icon">
+                    <div class="fas fa-map-signs"></div>
+                </div>
+                <div class="data">
+                    Alexandria, Virginia 
+                </div>
+                <div class="icon">
+                    <div class="fas fa-mobile-alt"></div>
+                </div>
+                <div class="data">
+                    571-493-0142
+                </div>
+                <div class="icon">
+                    <div class="fas fa-envelope"></div>
+                </div>
+                <div class="data">
+                    danielpellatt92@gmail.com
+                </div>
             </div>
-            <div class="data">
-                Alexandria, Virginia 
-            </div>
-            <div class="icon">
-                <div class="fas fa-mobile-alt"></div>
-            </div>
-            <div class="data">
-                571-493-0142
-            </div>
-            <div class="icon">
-                <div class="fas fa-envelope"></div>
-            </div>
-            <div class="data">
-                danielpellatt92@gmail.com
+            <div class="links">               
+                    <a href="http://dannypellatt.com/" target="_blank">Portfolio Website</a> - 
+                    <a href="https://www.linkedin.com/in/dannypellatt/">LinkedIn</a> - 
+                    <a href="https://github.com/dannypellatt">Github</a>
             </div>
         </div>
+
+
+        
+
         <!--Skills Section-->
-        <div class="subheading">Skills</div>
-        <div class="skills">
-            <ul>
-                <li>
-                    <div class="skill_name">
-                        C#
-                    </div>
-                    <div class="skill_prog">
-                        <span style="width: 60%;"></span>
-                    </div>
-                </li>
-                <li>
-                    <div class="skill_name">
-                        .NET Core MVC
-                    </div>
-                    <div class="skill_prog">
-                        <span style="width: 50%;"></span>
-                    </div>
-                </li>
-                <li>
-                    <div class="skill_name">
-                        SQL
-                    </div>
-                    <div class="skill_prog">
-                        <span style="width: 50%;"></span>
-                    </div>
-                </li> 
-                <li>
-                    <div class="skill_name">
-                        HTML
-                    </div>
-                    <div class="skill_prog">
-                        <span style="width: 70%;"></span>
-                    </div>
-                </li>
-                <li>
-                    <div class="skill_name">
-                        CSS
-                    </div>
-                    <div class="skill_prog">
-                        <span style="width: 70%;"></span>
-                    </div>
-                </li>  
-                <li>
-                    <div class="skill_name">
-                        JavaScript
-                    </div>
-                    <div class="skill_prog">
-                        <span style="width: 30%;"></span>
-                    </div>
-                </li>  
-                <li>
-                    <div class="skill_name">
-                        Python
-                    </div>
-                    <div class="skill_prog">
-                        <span style="width: 20%;"></span>
-                    </div>
-                </li>                     
-            </ul>
+        
+        <div class="skillssection">
+            <div class="subheading">Skills</div>
+            <div class="skills">
+                <h3>Languages & Frameworks</h3>
+                <ul>
+                    <li>
+                        <div class="skill_name">
+                            C#
+                        </div>
+                        <div class="skill_prog">
+                            <span style="width: 90%;"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill_name">
+                            ASP .NET Core
+                        </div>
+                        <div class="skill_prog">
+                            <span style="width: 70%;"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill_name">
+                            SQL
+                        </div>
+                        <div class="skill_prog">
+                            <span style="width: 70%;"></span>
+                        </div>
+                    </li> 
+                    <li>
+                        <div class="skill_name">
+                            HTML
+                        </div>
+                        <div class="skill_prog">
+                            <span style="width: 110%;"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill_name">
+                            CSS
+                        </div>
+                        <div class="skill_prog">
+                            <span style="width: 110%;"></span>
+                        </div>
+                    </li>  
+                    <li>
+                        <div class="skill_name">
+                            JavaScript
+                        </div>
+                        <div class="skill_prog">
+                            <span style="width: 50%;"></span>
+                        </div>
+                    </li>  
+                    <li>
+                        <div class="skill_name">
+                            Python
+                        </div>
+                        <div class="skill_prog">
+                            <span style="width: 30%;"></span>
+                        </div>
+                    </li>                     
+                </ul>
+                
+            </div>
+            <div class="otherskills">
+                <h3>NuGet Packages</h3>
+                <ul>
+                    <li>NewtonSoft.JSON</li>
+                    <li>Dapper</li>
+                </ul>
+                <h3>Tools & IDE</h3>
+                <ul>
+                    <li>Microsoft Visual Studio Community</li>
+                    <li>Microsoft Visual Studio Code</li>
+                    <li>Microsoft Office</li>
+                    <li>Git</li>
+                </ul>
+                
+            </div>
         </div>
+        
+       
         <!--Experience/Education-->
         <div class="subheading">Experience</div>
         <div class="explist">
+            
             <ul>
-
-                <li>
+                
+                <li class="expitem">
+                    <p class="small">&nbsp;&nbsp;&nbsp;&nbsp;ASP.NET Core MVC - C# - MySQL - HTML - CSS - JavaScript - NewtonSoft.JSON - Dapper</p>
                     <div class="date">ASP .NET Core MVC Web Application</div> 
                     <div class="jobinfo">
                         <div class="jobtitle">              Cross The Pond</div> 
-                    <div class ="jobdesc"><p>Multifunctional app aiding visits to UK for Americans and US for the British.</p></div>
-                    <div class ="jobdesc">Weather API
+                        <div class ="jobdesc"><p>Multifunctional app aiding visits to the UK for Americans and the US for the British.</p></div>
+                    <div class ="jobdesc">
+                        <p>Weather API</p>
                         <ul>
-                            <li></li>
-                            <li></li>
+                            <li>Allows users to get the temperature in the location they input</li>
+                            <li>Called two separate instances of the OpenWeather API found on RapidAPI, parsing results with the NewtonSoft JSON NuGet Package</li>
+                            
                         </ul>
-                        Translating Dictionary
+                        <p>Translation Dictionary</p>                        
                         <ul>
-                            <li></li>
-                            <li></li>
+                            <li>Allows users to see the differences between UK English and US English</li>
+                            <li>Built & manipulated database using MySQL on the back end</li>
+                            <li>Called alphabetically in app using C# with an MVC controller and presented as table using HTML & CSS</li>
                         </ul>
-                        Temperature Converter
+                        <p>Temperature Converter</p>
+                        
                         <ul>
-                            <li></li>
-                            <li></li>
+                            <li>Allows users to input a temperature and convert it into Fahrenheit or Celcius</li>
+                            <li>Used methods to convert depending on choice</li>
                         </ul>
-                        Tipping Calculator
+                        <p>Tipping Calculator</p>
+                        
                         <ul>
-                            <li></li>
-                            <li></li>
+                            <li>Used multiple methods to allow users to input their check and choose desired tip percentage, then displaying the tip as well as the final amount</li>
                         </ul>
                     </div>
                     </div>
                 </li>
                 <br><br><br><br>
-                <li>
+                <li class="expitem expitemfollow">
+                    <p class="small">&nbsp;&nbsp;&nbsp;&nbsp;ASP.NET Core MVC - C# - MySQL - HTML - CSS - JavaScript</p>
                     <div class="date">CRUD Database Application</div> 
                     <div class="jobinfo">
                         <div class="jobtitle">              Best Buy Sim.</div> 
-                    <div class ="jobdesc"><p>An Application that takes a simulated database of BestBuy products and allows data manipulation</p></div>
-                    <div class ="jobdesc">Multifunctional app aiding visits to UK for Americans and US for the British.
+                        <div class ="jobdesc"><p>An Application that takes a simulated database of BestBuy products and allows data manipulation.</p></div>
+                        
+                    <div class ="jobdesc">CRUD Database
                         <ul>
-                            <li></li>
-                            <li></li>
+                            <li>Uses IoC container to handle the newing up of objects, taking advantage of dependency injections</li>
+                            <li>Used MySQL database on the backend for data storage</li>
+                            <li>CRUD method implemented in a ProductRepository model allowing inserting, displaying, updating and deleting products </li>
+                            <li>Linked model to views using ProductController, displaying user choices</li>
                         </ul>
                     </div>
                     </div>

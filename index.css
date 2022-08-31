@@ -2,6 +2,14 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.subheading {
+    font-weight: bolder;
+    color: #2F5A78;
+    text-transform: uppercase;
+    padding: 16px 0px 16px 16px;
+    clear: both;
+}
+
 /* START heading SECTION */
 
 .heading {
@@ -31,10 +39,24 @@ img {
 
 /* START contact SECTION */
 
-.contactinfo {
+.contactbar {
     font-size: 15px;
-    padding-left: 16px;
-     background-color: #eeeeee;
+    padding: 16px 0px 8px 20px;
+    background-color: #eeeeee;
+    height: 90px;
+}
+.contactinfo {
+    float: left;
+    background-color: #eeeeee;
+    margin-left: 50px;
+}
+
+.links {
+    float: right;
+    background-color: #eeeeee;
+    text-align: right;
+    margin: 30px 50px 0px 0px;
+    font-size: 1.2em;
 }
 .icon{
     float: left;
@@ -47,43 +69,20 @@ img {
 }
 /* END contact SECTION */
 
+/* START skills SECTION */
 
-.subheading {
-    font-weight: bolder;
-    color: #2F5A78;
-    text-transform: uppercase;
-    padding: 16px 0px 16px 16px;
-}
-
-
-.date {
-    font-size: 16px;
-    font-weight: bolder;
-    color: #2F5A78;
+.skills {
+    width: 80%;
     float: left;
 }
-
-.social {
-    font-size: 15px;
-    padding-left: 16px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-}
-
-
-.expinfo {
-    display: inline-block;
-}
-.skills {
-    width: 70%;
-    margin: auto;
+.skillssection {
+    margin: 20px;
 }
 .skills ul li{
     display: flex;
     margin-bottom: 10px;
-    justify-content: space-between;
     align-items: center;
-    margin-left: -15px;
+    margin-left: 10px;
 } 
 .skills ul li .skill_prog{
     width: 60%;
@@ -94,7 +93,7 @@ img {
     position: absolute;
     height: 100%;   
     background: #2F5A78;
-    padding-right: 50px;
+    padding-right: 20px;
 }
 .skill_name{
     width: 150px;
@@ -102,6 +101,64 @@ img {
 .skill_per{
     margin-right: 15px;
 } 
+
+/* END skills SECTION */
+
+
+
+.small {
+    font-variant: small-caps;
+    font-size: 13px;
+    float: right;
+    overflow: hidden;
+    margin: 20px 25px 10px 15px;
+}
+
+.date {
+    font-size: 16px;
+    font-weight: bolder;
+    color: #2F5A78;
+    float: left;
+}
+
+
+.expitem {
+    margin: 0px 10px 0px 10px;
+    padding: 20px;
+    border: #2F5A78 solid 1px;
+    list-style: none;
+}
+.expitemfollow {
+    margin-top: -50px;
+}
+
+.expinfo {
+    display: inline-block;
+}
+
+
 .jobtitle {
     white-space: pre;
+    font-weight: bold;
+}
+
+
+.jobdesc ul {
+    margin-top: 5px;
+}
+
+
+.otherskills ul li .skill_prog{
+    width: 25%;
+    height: 10px;
+}
+
+
+
+
+.social {
+    font-size: 15px;
+    padding-left: 16px;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
