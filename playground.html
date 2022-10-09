@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Danny Pellatt's Resume</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    </head>
+    <body>
+        <!--START intro SECTION-->
+        <div class="intro">
+            <img src="https://www.gtiarmoredcars.com/wp-content/uploads/2021/02/62681-flat-icons-face-computer-design-avatar-icon.png" alt = "" height="100" width="100px" />
+            <div class="heading">Danny Pellatt</div>
+            <div class="prof">Full Stack Software Developer</div>
+            <div class="summary v-small-padding-on-edges"><p class="indent">Specializing in ASP .NET Core MVC, C#, MySQL, UX, & UI. </p><p class="indent">1+ year experience working with back end development, 3+ years experience developing websites as a freelance contractor. A confident, friendly, and ambitious person with excellent analytical, problem-solving and organizational skills.</p></div>
+        </div>
+        <!--END intro SECTION-->
+
+        <!--START contact SECTION-->
+        <div id="contact" class="even-columns">
+            <div class="div-left">
+                <div class="icon">
+                    <div class="fas fa-map-signs"></div>
+                </div>
+                <div class="data">
+                    Alexandria, Virginia 
+                </div>
+                <div class="icon ">
+                    <div class="fas fa-mobile-alt"></div>
+                </div>
+                <div class="data">
+                    202-599-4606
+                </div>
+                <div class="icon">
+                    <div class="fas fa-envelope"></div>
+                </div>
+                <div class="data">
+                    dannyrpellatt@gmail.com
+                </div>
+            </div>
+            <div class="right-align div-right">
+                
+                <div class="data">
+                    <a href="http://dannypellatt.com/" target="_blank" >Portfolio Website</a>
+                </div>
+                <div class="data">
+                    <a href="https://www.linkedin.com/in/dannypellatt/">LinkedIn</a>
+                </div>
+                <div class="data">
+                    <a href="https://github.com/dannypellatt">Github</a>
+                </div>           
+            </div>
+        </div>
+        <!--END contact SECTION-->
+
+        <!--START skills SECTION-->
+        <div id="skills" class="clear">
+            <h2>Skills</h2>
+            <div class="languages skills">
+
+                <button type="button" class="collapsible"><h3>Languages</h3></button>
+                <div class="content">
+                    <ul>
+                        <li>
+                            <div class="skill_name">
+                                - C#
+                            </div>
+                            <div class="skill_prog">
+                                <span style="width: 90%;"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill_name">
+                                - SQL
+                            </div>
+                            <div class="skill_prog">
+                                <span style="width: 70%;"></span>
+                            </div>
+                        </li> 
+                        <li>
+                            <div class="skill_name">
+                                - HTML
+                            </div>
+                            <div class="skill_prog">
+                                <span style="width: 110%;"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill_name">
+                                - CSS
+                            </div>
+                            <div class="skill_prog">
+                                <span style="width: 110%;"></span>
+                            </div>
+                        </li>  
+                        <li>
+                            <div class="skill_name">
+                                - JavaScript
+                            </div>
+                            <div class="skill_prog">
+                                <span style="width: 50%;"></span>
+                            </div>
+                        </li>  
+                        <li>
+                            <div class="skill_name">
+                                - Python
+                            </div>
+                            <div class="skill_prog">
+                                <span style="width: 30%;"></span>
+                            </div>
+                        </li>                     
+                    </ul>
+                </div>
+
+                <button type="button" class="collapsible"><h3>Frameworks & Libraries</h3></button>
+                <div class="content">
+                    <ul>
+                        <li>- ASP .NET Core</li>
+                        <li>- JQuery</li>
+                        <li>- Bootstrap</li>
+                    </ul>
+                </div>
+
+                <button type="button" class="collapsible"><h3>Tools & IDE</h3></button>
+                <div class="content">
+                    <ul>
+                        <li>- Git & GitHub</li>
+                        <li>- Chrome DevTools</li>
+                        <li>- Microsoft Visual Studio Community</li>
+                        <li>- Microsoft Visual Studio Code</li>
+                        <li>- Microsoft Office</li>
+                        <li>- Stack Overflow</li>
+                    </ul>
+                </div>
+
+                <button type="button" class="collapsible"><h3>NuGet Packages</h3></button>
+                <div class="content">
+                    <ul>
+                        <li>- NewtonSoft.JSON</li>
+                        <li>- Dapper</li>
+                    </ul>
+                </div>
+                
+                
+                
+                
+                
+            </div>
+            <div class="otherskills">
+                
+            </div>
+        </div>
+      
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+            content.style.display = "none";
+            } else {
+            content.style.display = "block";
+            }
+        });
+        }
+    </script>
+
+    </body>
+        
+    

@@ -75,7 +75,7 @@ a::after {
 /* START skills SECTION */
 
 .skills {
-    width: 80%;
+    width: 100%;
     float: left;
     margin-bottom: 50px;
 }
@@ -87,7 +87,7 @@ a::after {
     display: flex;
     margin-bottom: 10px;
     align-items: center;
-    margin-left: 10px;
+    margin-left: 5px;
 } 
 .skills ul li .skill_prog{
     width: 60%;
@@ -101,7 +101,7 @@ a::after {
     padding-right: 20px;
 }
 .skill_name{
-    width: 150px;
+    width: 100px;
 }
 .skill_per{
     margin-right: 15px;
@@ -185,7 +185,95 @@ a::after {
     float: left;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.div-left{
+    float:left;
+    padding-left:10px;
+}
+.div-right{
+    float:right;
+    padding-right:10px;
+}
+
+.v-small-padding-on-edges, .v-small-padding-on-edges img {
+    padding: 0 1em;
+}
+
+.small-padding-on-edges, .small-padding-on-edges img {
+    padding: 0 2em;
+}
+
+.padding-on-edges, .padding-on-edges img{
+    padding: 0 4em;
+}
+.large-padding-on-edges, .large-padding-on-edges img{
+    padding: 0 6em;
+}
+
+@media (min-width: 40em) {
+    .split {
+        display: flex;
+        gap: 1em;
+    }
+    .even-columns {
+        display: flex;
+        align-items: flex-start;
+        gap: 1em;
+        justify-content: center;
+    }
+    .hide-when-big {
+        display: none;
+    }
+}
+
+@media (max-width: 40em) {
+    .hide-when-small {
+        display: none;
+    }
+}
+
+.even-columns > * {
+    flex-basis: 100%;
+}
+
+.indent {
+    text-indent: 2em;
+}
+
+.clear {
+    clear: both;
+}
 
 
-
-
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 5px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
