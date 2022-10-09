@@ -1,5 +1,7 @@
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 900px;
+    margin: auto;
 }
 
 .subheading {
@@ -16,7 +18,8 @@ body {
     font-size: 35px;
     font-weight: bolder;
     text-transform: uppercase;
-    padding-top: 5px;
+    padding-top: 20px;
+    margin-top: .4em;
 }
 .intro {
     background-color: #2F5A78;
@@ -27,6 +30,7 @@ body {
 }
 .prof {
     font-size: 25px;
+    font-size: 5vw;
     font-weight: lighter;
     padding: 5px 0px 10px 0px;
 }
@@ -39,44 +43,37 @@ img {
 
 /* START contact SECTION */
 
-.contactbar {
-    font-size: 15px;
-    padding: 16px 0px 8px 20px;
-    background-color: #eeeeee;
-    height: 90px;
-}
 .contactinfo {
     float: left;
     background-color: #eeeeee;
     margin-left: 50px;
 }
 
-.links {
-    float: right;
-    background-color: #eeeeee;
-    text-align: right;
-    margin: 30px 50px 0px 0px;
-    font-size: 1.2em;
-}
 .icon{
     float: left;
     color: #2F5A78;
 }
 .data {
     font-size: 1.2em;
-    padding-bottom: 10px;
-    margin-left: 20px;
+    margin-left: 2em;
+
 }
 a::after {
     color: #2F5A78
 }
 
 #contact {
-    padding: 2em;
+    padding: 1em 2em;
 }
 /* END contact SECTION */
 
 /* START skills SECTION */
+
+#portfolio {
+    background-color: #2F5A78;
+    margin: auto;
+    padding-bottom: 1em;
+}
 
 #skills {
     width: 100%;
@@ -149,7 +146,6 @@ a::after {
 }
 .otherskills ul li .skill_prog{
     width: 25%;
-    height: 10px;
 }
 .explist {
     width: 74%;
@@ -301,3 +297,13 @@ a::after {
   .learn-more {
     padding-bottom: 1em;
   }
+
+
+  h2 {
+    color: white;
+  }
+
+.resume-section {
+    width: 95%;
+    margin: auto;
+}
