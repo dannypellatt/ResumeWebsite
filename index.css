@@ -78,13 +78,14 @@ a::after {
 
 /* START skills SECTION */
 
-.skills {
+#skills {
     width: 100%;
     float: left;
-    margin-bottom: 50px;
+    margin: 1em 0;
 }
+
 .skillssection {
-    margin: 20px;
+    margin: 1em;
 
 }
 .skills ul li{
