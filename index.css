@@ -89,7 +89,6 @@ a::after {
     display: flex;
     margin-bottom: 10px;
     align-items: center;
-    margin-left: 5px;
 } 
 .skills ul li .skill_prog{
     width: 60%;
@@ -142,7 +141,7 @@ a::after {
     display: inline-block;
 }
 .explist ul {
-    padding-left: 30px
+    padding-left: 10px
 }
 .otherskills ul li .skill_prog{
     width: 25%;
@@ -306,4 +305,8 @@ a::after {
 .resume-section {
     width: 95%;
     margin: auto;
+}
+
+ul {
+    padding-left: 5px;
 }
